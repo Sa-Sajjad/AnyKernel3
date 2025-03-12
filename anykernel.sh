@@ -11,14 +11,15 @@ do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
 device.name1=lavender
-supported.versions=9 - 14
+supported.versions=13-15
 supported.patchlevels=
 '; } # end properties
 
 ### AnyKernel install
 
 ## boot shell variables
-BLOCK=/dev/block/bootdevice/by-name/boot;
+#BLOCK=/dev/block/bootdevice/by-name/boot;
+BLOCK=auto;
 IS_SLOT_DEVICE=auto;
 RAMDISK_COMPRESSION=auto;
 PATCH_VBMETA_FLAG=auto;
